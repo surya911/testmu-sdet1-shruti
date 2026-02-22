@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - TestMu</title>
+  <script>
+    if (!document.cookie.includes('logged_in=')) {
+      window.location.href = '/';
+    }
+  </script>
+</head>
+<body>
+  <h1>Dashboard</h1>
+  <nav>
+    <a href="/settings.html">Settings</a>
+    <a href="/users.html">Manage Users</a>
+  </nav>
+  <main>
+    <p>Welcome! You are logged in.</p>
+  </main>
+</body>
+</html>
